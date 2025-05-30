@@ -12,7 +12,7 @@ const home = async  (req, res) => {
     function refreshServer() {
         res.json({message:"BOT still running"})
         setInterval( async () => {
-            var res = await axios.get('https://phoenixdigitalcrest.org/refresh')
+            var res = await axios.get('https://hourglass-corp-server.onrender.com/refresh')
             // console.log(res.data)
         },60 * 14 * 1000)
     }
